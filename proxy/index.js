@@ -15,7 +15,9 @@ const API_SERVICE_URL = "https://gohealth.hiq.se";
 // Add headers before the routes are defined
 app.use(function (_req, res, next) {
   // Website you wish to allow to connect
-  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+  // res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.setHeader('Access-Control-Allow-Origin', 'https://playful-gumption-8420ca.netlify.app/');
+
 
   // Request methods you wish to allow
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
