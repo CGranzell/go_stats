@@ -1,0 +1,56 @@
+.mainContainer {
+  height: 100vh;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.topRowContainer {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  border: 1px solid black;
+}
+
+.bottomRowContainer {
+ 
+    height: 50%;
+    width: 100%;
+    display: flex;
+    border: 1px solid black;
+  
+}
+
+/* Poängtoppen */
+.topPointsContainer {
+  height: 100%;
+  width: 70%;
+  border: 1px solid black;
+}
+
+.topImgContainer{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border: 1px solid black;
+}
+
+/* Prestationstoppen */
+.topAchievementContainer{
+  height: 100%;
+  width: 30%;
+  border: 1px solid black;
+}
+
+/* Tot poäng deltagare*/
+.totPointIndividualContainer {
+  height: 100%;
+  width: 70%;
+  border: 1px solid black;
+}
+
+/* Senaste händelser */
+.latestEventContainer{
+  height: 100%;
+  width: 30%;
+  border: 1px solid black;
+}
