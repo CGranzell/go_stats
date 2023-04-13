@@ -1,56 +1,205 @@
 .mainContainer {
   height: 100vh;
   width: 100%;
-  border: 1px solid black;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'DynaPuff', cursive;
 }
 
-.topRowContainer {
+.mainWrapper {
+  height: 95%;
+  width: 85%;
+  background-color: rgb(17, 17, 33);
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* logga container */
+.logoContainer{
+  height: 5rem;
+  width: 5rem;
+  position: absolute;
+  /* border: 1px solid rgb(255, 255, 255); */
+  left: 5px;
+  top: 5px;
+
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* övre rad container */
+.topRowMainContainer {
+  width: 95%;
+  height: 45%;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: space-between;
+
+}
+/* vänster top */
+.topLeftContainer{
+  height: 100%;
+  width: 30%;
+  background-color: rgb(49, 49, 77);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid white; */
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.topTextContainer {
   height: 50%;
   width: 100%;
+  /* border: 1px solid white; */
   display: flex;
-  border: 1px solid black;
-}
-
-.bottomRowContainer {
- 
-    height: 50%;
-    width: 100%;
-    display: flex;
-    border: 1px solid black;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   
 }
 
-/* Poängtoppen */
-.topPointsContainer {
-  height: 100%;
-  width: 70%;
-  border: 1px solid black;
+.topTextContainer h3 {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 900;
+}
+.topTextContainer p {
+  font-size: 1rem;
+  color: white;
+  font-weight: 900;
 }
 
-.topImgContainer{
+.topCircleContainer {
   height: 100%;
   width: 100%;
-  position: relative;
-  border: 1px solid black;
+  /* border: 1px solid white; */
+  display: flex;
+ 
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
-/* Prestationstoppen */
-.topAchievementContainer{
+.topCircleWrapper {
+  height: 100%;
+  width: 50%;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftCircle {
+  height: 90%;
+  border-radius: 50%;
+  width: 90%;
+  /* border: 1px solid white; */
+ 
+}
+
+.topPointContainer {
+  height: 100%;
+  width: 50%;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topPointContainer p {
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 900;
+  
+}
+
+/* höger top */
+.topRightContainer{
+  height: 100%;
+  width: 68%;
+  background-color: rgb(49, 49, 77);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+/* nedre rad container */
+.bottomRowMainContainer {
+  width: 95%;
+  height: 45%;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: space-between;
+}
+/* vänster nedre */
+.bottomLeftContainer {
+  height: 100%;
+  width: 68%;
+  background-color: rgb(49, 49, 77);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+/* höger nedre */
+.bottomRightContainer {
   height: 100%;
   width: 30%;
-  border: 1px solid black;
+  background-color: rgb(49, 49, 77);
+  border-radius: 8px;
+  /* border: 1px solid white; */
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-/* Tot poäng deltagare*/
-.totPointIndividualContainer {
-  height: 100%;
-  width: 70%;
-  border: 1px solid black;
+.bottomTextContainer {
+  height: 30%;
+  width: 100%;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
-/* Senaste händelser */
-.latestEventContainer{
-  height: 100%;
-  width: 30%;
-  border: 1px solid black;
+.bottomTextContainer p {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 900;
 }
+
+.bottomLeaderContainer {
+  height: 30%;
+  width: 100%;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottomLeaderContainer p {
+  font-size: 1rem;
+  color: white;
+  font-weight: 900;
+}
+
+.bottomTeamPointContainer {
+  height: 40%;
+  width: 100%;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottomTeamPointContainer p{
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 900;
+}
+
