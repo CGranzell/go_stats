@@ -41,7 +41,6 @@ export const teamOptions = {
   },
 };
 
-
 // -------- Deltagare options -----------
 export const userOptions = {
   scales: {
@@ -85,21 +84,9 @@ export const userOptions = {
   },
 };
 
-
 // -------- Pie options -----------
 export const pieOptions = {
-  
-  
   maintainAspectRatio: false,
-  // layout: {},
-  // indexAxis: 'y',
-  // elements: {
-  //   bar: {
-  //     borderWidth: 2,
-  //   },
-  // },
-
-  // responsive: true,
   plugins: {
     legend: {
       display: false,

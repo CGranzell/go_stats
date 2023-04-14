@@ -40,7 +40,6 @@ function App() {
   const [teamName, setTeamName] = useState([]);
   const [userName, setUserName] = useState([]);
 
-  
   //  Filtrerar team namn
   const filteredTeamNames = teamName.map((team) => {
     return team.UnitName;
@@ -53,13 +52,10 @@ function App() {
   const filteredTeamColor = teamName.map((team) => {
     return team.TeamColor;
   });
-  
+
   teamLabels = filteredTeamNames;
   teamScores = filteredTeamScore;
   teamColors = filteredTeamColor;
-
-
- 
 
   // team data
   const teamData = {
@@ -91,7 +87,6 @@ function App() {
   userScores = filteredUserScore.slice(0, 10);
   userColors = filteredUserColor.slice(0, 10);
 
-
   const userData = {
     labels: userLabels,
     datasets: [
@@ -102,9 +97,6 @@ function App() {
       },
     ],
   };
-
-
- 
 
   // ------------- Pie -------
   const pieData = {
@@ -159,7 +151,7 @@ function App() {
                 </div>
               </div>
               <div className={styles.topPointContainer}>
-                <p>{filteredTeamScore.slice(0, 1)} poäng</p>
+                <p>{Math.round(filteredTeamScore.slice(0, 1))} poäng</p>
               </div>
             </div>
           </div>
@@ -192,8 +184,8 @@ function App() {
             <div className={styles.bottomLeaderContainer}>
               <p> {filteredUserNames.slice(0, 1)} </p>
             </div>
-            <div className={styles.bottomTeamPointContainer} >
-            <p>{filteredUserScore.slice(0, 1)} poäng</p>
+            <div className={styles.bottomTeamPointContainer}>
+              <p>{Math.round(filteredUserScore.slice(0, 1))} poäng</p>
             </div>
           </div>
         </div>

@@ -20,14 +20,12 @@
   align-items: center;
 }
 /* logga container */
-.logoContainer{
+.logoContainer {
   height: 5rem;
   width: 5rem;
   position: absolute;
-  /* border: 1px solid rgb(255, 255, 255); */
   left: 5px;
   top: 5px;
-
 }
 
 .logo {
@@ -40,32 +38,31 @@
 .topRowMainContainer {
   width: 95%;
   height: 45%;
-  /* border: 1px solid white; */
   display: flex;
   justify-content: space-between;
-
 }
 /* vänster top */
-.topLeftContainer{
+.topLeftContainer {
   height: 100%;
   width: 30%;
   background-color: rgb(49, 49, 77);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  /* border: 1px solid white; */
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .topTextContainer {
   height: 50%;
   width: 100%;
-  /* border: 1px solid white; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  
 }
 
 .topTextContainer h3 {
@@ -82,17 +79,12 @@
 .topCircleContainer {
   height: 100%;
   width: 100%;
-  /* border: 1px solid white; */
   display: flex;
- 
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 
 .topCircleWrapper {
   height: 100%;
   width: 50%;
-  /* border: 1px solid white; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,14 +94,11 @@
   height: 90%;
   border-radius: 50%;
   width: 90%;
-  /* border: 1px solid white; */
- 
 }
 
 .topPointContainer {
   height: 100%;
   width: 50%;
-  /* border: 1px solid white; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,23 +108,25 @@
   font-size: 1.3rem;
   color: white;
   font-weight: 900;
-  
 }
 
 /* höger top */
-.topRightContainer{
+.topRightContainer {
   height: 100%;
   width: 68%;
   background-color: rgb(49, 49, 77);
   border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 /* nedre rad container */
 .bottomRowMainContainer {
   width: 95%;
   height: 45%;
-  /* border: 1px solid white; */
   display: flex;
   justify-content: space-between;
 }
@@ -145,7 +136,11 @@
   width: 68%;
   background-color: rgb(49, 49, 77);
   border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 /* höger nedre */
@@ -154,18 +149,19 @@
   width: 30%;
   background-color: rgb(49, 49, 77);
   border-radius: 8px;
-  /* border: 1px solid white; */
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .bottomTextContainer {
   height: 30%;
   width: 100%;
-  /* border: 1px solid white; */
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .bottomTextContainer p {
@@ -177,7 +173,6 @@
 .bottomLeaderContainer {
   height: 30%;
   width: 100%;
-  /* border: 1px solid white; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,14 +187,12 @@
 .bottomTeamPointContainer {
   height: 40%;
   width: 100%;
-  /* border: 1px solid white; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.bottomTeamPointContainer p{
+.bottomTeamPointContainer p {
   font-size: 1.5rem;
   color: white;
   font-weight: 900;
 }
-
