@@ -9,11 +9,14 @@ import {
   Legend,
   ArcElement,
 } from 'chart.js';
-import { Bar, Pie } from 'react-chartjs-2';
 import HiQ from './img/HiQ_logo_white.svg';
 import styles from './App.module.css';
 import { getTeams, getUsers } from './fetch';
-import { teamOptions, userOptions, pieOptions } from './options';
+
+import TeamLeader from './components/TeamLeader';
+import TeamScore from './components/TeamScore';
+import UsersScore from './components/UsersScore';
+import UserLeader from './components/UserLeader';
 
 // team
 let teamLabels = [];
@@ -57,18 +60,6 @@ function App() {
   teamScores = filteredTeamScore;
   teamColors = filteredTeamColor;
 
-  // team data
-  const teamData = {
-    labels: teamLabels,
-    datasets: [
-      {
-        data: teamScores,
-        backgroundColor: teamColors,
-        borderColor: 'none',
-      },
-    ],
-  };
-
   //---------------- user data ---------------
   //  Filtrerar user namn
   const filteredUserNames = userName.map((user) => {
@@ -86,29 +77,6 @@ function App() {
   userLabels = filteredUserNames.slice(0, 10);
   userScores = filteredUserScore.slice(0, 10);
   userColors = filteredUserColor.slice(0, 10);
-
-  const userData = {
-    labels: userLabels,
-    datasets: [
-      {
-        data: userScores,
-        backgroundColor: userColors,
-        borderColor: 'none',
-      },
-    ],
-  };
-
-  // ------------- Pie -------
-  const pieData = {
-    labels: filteredTeamNames.slice(0, 1),
-    datasets: [
-      {
-        data: filteredTeamScore.slice(0, 1),
-        backgroundColor: filteredTeamColor.slice(0, 1),
-        borderWidth: 0,
-      },
-    ],
-  };
 
   useEffect(() => {
     getTeams(id, setTeamName);
@@ -139,55 +107,32 @@ function App() {
         {/* Container övre rad */}
         <div className={styles.topRowMainContainer}>
           {/* Vänster top */}
-          <div className={styles.topLeftContainer}>
-            <div className={styles.topTextContainer}>
-              <h3>Lag i ledning</h3>
-              <p>-- {filteredTeamNames.slice(0, 1)} --</p>
-            </div>
-            <div className={styles.topCircleContainer}>
-              <div className={styles.topCircleWrapper}>
-                <div className={styles.leftCircle}>
-                  <Pie data={pieData} options={pieOptions} height={50} />
-                </div>
-              </div>
-              <div className={styles.topPointContainer}>
-                <p>{Math.round(filteredTeamScore.slice(0, 1))} poäng</p>
-              </div>
-            </div>
-          </div>
+
+          <TeamLeader
+            filteredTeamNames={filteredTeamNames}
+            filteredTeamScore={filteredTeamScore}
+            filteredTeamColor={filteredTeamColor}
+          />
           {/* Höger top */}
-          <div className={styles.topRightContainer}>
-            <Bar
-              options={teamOptions}
-              data={teamData}
-              width={100}
-              height={100}
-            />
-          </div>
+          <TeamScore
+            teamLabels={teamLabels}
+            teamScores={teamScores}
+            teamColors={teamColors}
+          />
         </div>
         {/* Container nedre rad */}
         <div className={styles.bottomRowMainContainer}>
           {/* Vänster nedre */}
-          <div className={styles.bottomLeftContainer}>
-            <Bar
-              options={userOptions}
-              data={userData}
-              width={100}
-              height={100}
-            />
-          </div>
+          <UsersScore
+            userLabels={userLabels}
+            userScores={userScores}
+            userColors={userColors}
+          />
           {/* Höger nedre */}
-          <div className={styles.bottomRightContainer}>
-            <div className={styles.bottomTextContainer}>
-              <p>Deltagare i ledning</p>
-            </div>
-            <div className={styles.bottomLeaderContainer}>
-              <p> {filteredUserNames.slice(0, 1)} </p>
-            </div>
-            <div className={styles.bottomTeamPointContainer}>
-              <p>{Math.round(filteredUserScore.slice(0, 1))} poäng</p>
-            </div>
-          </div>
+          <UserLeader
+            filteredUserNames={filteredUserNames}
+            filteredUserScore={filteredUserScore}
+          />
         </div>
       </div>
     </div>
